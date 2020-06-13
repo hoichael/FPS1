@@ -135,7 +135,19 @@ public class PlayerController : MonoBehaviour
         }
         
         anim.SetFloat("moveSpeed", _moveInput.magnitude);
-        anim.SetBool("grounded", _canJump);    
+        anim.SetBool("grounded", _canJump);
+
+        // adjust sens
+        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+        {
+            _mouseSens += 0.1f;
+            AudioManager.instance.PlaySFX(3);
+        }
+        if (Input.GetKeyDown(KeyCode.KeypadMinus) && _mouseSens - 0.1f > 0)
+        {
+            _mouseSens -= 0.1f;
+            AudioManager.instance.PlaySFX(3);
+        }
     }
 
     private void Movement()
