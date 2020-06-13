@@ -172,6 +172,7 @@ public class PlayerController : MonoBehaviour
         //jumping
         if (Input.GetKeyDown(KeyCode.Space) && _canJump)
         {
+            AudioManager.instance.PlaySFX(1);
             _moveInput.y += _jumpPower;
         }
 
@@ -234,6 +235,8 @@ public class PlayerController : MonoBehaviour
         {
             currentGun = 0;
         }
+
+        AudioManager.instance.PlaySFX(5);
 
         _activeGun = allGuns[currentGun];
         _activeGun.gameObject.SetActive(true);
