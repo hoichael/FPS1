@@ -1,6 +1,6 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -210,7 +210,41 @@ public class PlayerController : MonoBehaviour
 
     public void FireShot()
     {
-         if (_activeGun.currentAmmo > 0)
+         if (_activeGun.currentAmmo > 0 && _activeGun.gunName == "ActualShotgun")
+         {
+            _recoil.Recoil();
+            _activeGun.currentAmmo--;
+            Instantiate(_activeGun.bulletShell, _shellEjectPoint.position, _shellEjectPoint.rotation);
+            _activeGun.fireCounter = _activeGun.fireRate;
+            UIController.instance.ammoText.text = "" + _activeGun.currentAmmo;
+
+            var FProt0 = _firePoint.rotation;
+            var FProt1 = _firePoint.rotation;
+            var FProt2 = _firePoint.rotation;
+            var FProt3 = _firePoint.rotation;
+            var FProt4 = _firePoint.rotation;
+            var FProt5 = _firePoint.rotation;
+            FProt0.x += Random.Range(-0.1f, 0.1f);
+            FProt0.y += Random.Range(-0.1f, 0.1f);
+            Instantiate(_activeGun.bullet, _firePoint.position, FProt0);
+            FProt1.x += Random.Range(-0.1f, 0.1f);
+            FProt1.y += Random.Range(-0.1f, 0.1f);
+            Instantiate(_activeGun.bullet, _firePoint.position, FProt1);
+            FProt2.x += Random.Range(-0.1f, 0.1f);
+            FProt2.y += Random.Range(-0.1f, 0.1f);
+            Instantiate(_activeGun.bullet, _firePoint.position, FProt2);
+            FProt3.x += Random.Range(-0.1f, 0.1f);
+            FProt3.y += Random.Range(-0.1f, 0.1f);
+            Instantiate(_activeGun.bullet, _firePoint.position, FProt3);
+            FProt4.x += Random.Range(-0.1f, 0.1f);
+            FProt4.y += Random.Range(-0.1f, 0.1f);
+            Instantiate(_activeGun.bullet, _firePoint.position, FProt4);
+            FProt5.x += Random.Range(-0.1f, 0.1f);
+            FProt5.y += Random.Range(-0.1f, 0.1f);
+            Instantiate(_activeGun.bullet, _firePoint.position, FProt5);
+
+         }
+         else if (_activeGun.currentAmmo > 0)
          {
             _recoil.Recoil();
             
