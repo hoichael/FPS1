@@ -184,7 +184,7 @@ public class PlayerController : MonoBehaviour
         //jumping
         if (Input.GetKeyDown(KeyCode.Space) && _canJump)
         {
-            AudioManager.instance.PlaySFX(1);
+            AudioManager.instance.PlaySFX(6);
             _moveInput.y += _jumpPower;
         }
 
