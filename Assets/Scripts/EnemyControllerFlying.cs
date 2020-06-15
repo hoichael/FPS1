@@ -113,7 +113,8 @@ public class EnemyControllerFlying : MonoBehaviour
                     {
                         _fireCount -= Time.deltaTime;
 
-                        if (_fireCount <= 0)
+                        RaycastHit hit;
+                        if ((_fireCount <= 0) && (Physics.Raycast(_firePoint.position, _firePoint.forward, out hit, 50f)) && (hit.transform.tag == "Player"))
                         {
                             _fireCount = _fireRate;
 
