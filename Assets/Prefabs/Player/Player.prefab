@@ -1772,7 +1772,7 @@ MonoBehaviour:
   bullet: {fileID: 7513366582314874907, guid: f797eba9f98e7cd48a2263127a2dd482, type: 3}
   bulletShell: {fileID: 791849855297759785, guid: fb46382c2585fdb47b1fdab7075de52d,
     type: 3}
-  muzzleFlash: {fileID: 8546734798012135030, guid: e2c87f63d14d5884b8541fb9666d8337,
+  muzzleFlash: {fileID: 2049376291407389747, guid: ddeb4e6d94a389147bfea8b1dd9654a1,
     type: 3}
   canAutoFire: 0
   fireRate: 1

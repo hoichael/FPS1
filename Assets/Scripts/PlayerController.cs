@@ -214,6 +214,7 @@ public class PlayerController : MonoBehaviour
          {
             _recoil.Recoil();
             _activeGun.currentAmmo--;
+            Instantiate(_activeGun.muzzleFlash, _firePoint.position, _firePoint.rotation);
             Instantiate(_activeGun.bulletShell, _shellEjectPoint.position, _shellEjectPoint.rotation);
             _activeGun.fireCounter = _activeGun.fireRate;
             UIController.instance.ammoText.text = "" + _activeGun.currentAmmo;
