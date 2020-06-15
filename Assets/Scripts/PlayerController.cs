@@ -226,21 +226,27 @@ public class PlayerController : MonoBehaviour
             var FProt5 = _firePoint.rotation;
             FProt0.x += Random.Range(-0.1f, 0.1f);
             FProt0.y += Random.Range(-0.1f, 0.1f);
+            FProt0.z += Random.Range(-0.1f, 0.1f);
             Instantiate(_activeGun.bullet, _firePoint.position, FProt0);
             FProt1.x += Random.Range(-0.1f, 0.1f);
             FProt1.y += Random.Range(-0.1f, 0.1f);
+            FProt1.z += Random.Range(-0.1f, 0.1f);
             Instantiate(_activeGun.bullet, _firePoint.position, FProt1);
             FProt2.x += Random.Range(-0.1f, 0.1f);
             FProt2.y += Random.Range(-0.1f, 0.1f);
+            FProt2.z += Random.Range(-0.1f, 0.1f);
             Instantiate(_activeGun.bullet, _firePoint.position, FProt2);
             FProt3.x += Random.Range(-0.1f, 0.1f);
             FProt3.y += Random.Range(-0.1f, 0.1f);
+            FProt3.z += Random.Range(-0.1f, 0.1f);
             Instantiate(_activeGun.bullet, _firePoint.position, FProt3);
             FProt4.x += Random.Range(-0.1f, 0.1f);
             FProt4.y += Random.Range(-0.1f, 0.1f);
+            FProt4.z += Random.Range(-0.1f, 0.1f);
             Instantiate(_activeGun.bullet, _firePoint.position, FProt4);
             FProt5.x += Random.Range(-0.1f, 0.1f);
             FProt5.y += Random.Range(-0.1f, 0.1f);
+            FProt5.z += Random.Range(-0.1f, 0.1f);
             Instantiate(_activeGun.bullet, _firePoint.position, FProt5);
 
          }
