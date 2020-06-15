@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4015647018088406573}
   - component: {fileID: 4015647018088406570}
   - component: {fileID: 4015647018088406571}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: default
   m_TagString: Solid
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4015647018219505495}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wall_2
   m_TagString: Solid
   m_Icon: {fileID: 0}
@@ -208,6 +208,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: box_small_1_lamp (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: d9c586d3014411c4f8a4bf1aad7a741e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: d9c586d3014411c4f8a4bf1aad7a741e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9c586d3014411c4f8a4bf1aad7a741e, type: 3}
 --- !u!4 &8268825938023568885 stripped
@@ -297,6 +307,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: box_small_1_lamp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: d9c586d3014411c4f8a4bf1aad7a741e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534866581884222612, guid: d9c586d3014411c4f8a4bf1aad7a741e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9c586d3014411c4f8a4bf1aad7a741e, type: 3}
