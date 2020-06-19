@@ -108,7 +108,8 @@ public class EnemyControllerBig3S : MonoBehaviour
                             Vector3 _targetDir = _targetPoint - transform.position;
                             float _angle = Vector3.SignedAngle(_targetDir, transform.forward, Vector3.up);
 
-                            if (Mathf.Abs(_angle) < 66)
+                            RaycastHit hit;
+                            if (((Mathf.Abs(_angle) < 66) && (Physics.Raycast(_firePoint.position, _firePoint.forward, out hit, 60f)) && (hit.transform.tag == "Player")))
                             {
                                 Instantiate(_bullet, _firePoint.position, _firePoint.rotation);
                                 Instantiate(_bullet, _firePoint2.position, _firePoint.rotation);
