@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3484189250116734139}
   - component: {fileID: 7370856350160071529}
   - component: {fileID: -2279360120819904533}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: SniperBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,6 +122,8 @@ MonoBehaviour:
   damageEnemy: 1
   _isShotgun: 0
   _shotgunBullet: {fileID: 0}
+  _isMegaShotgun: 0
+  _megaShotgunBullet: {fileID: 0}
 --- !u!54 &7513366582314874880
 Rigidbody:
   m_ObjectHideFlags: 0

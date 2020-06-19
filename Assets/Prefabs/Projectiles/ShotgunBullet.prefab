@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7598431974200973597}
   - component: {fileID: 4567728620225724111}
   - component: {fileID: 3148583493805615298}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: ShotgunBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +123,8 @@ MonoBehaviour:
   _isShotgun: 1
   _shotgunBullet: {fileID: 7513366582314874907, guid: f797eba9f98e7cd48a2263127a2dd482,
     type: 3}
+  _isMegaShotgun: 0
+  _megaShotgunBullet: {fileID: 0}
 --- !u!54 &3561653718386634150
 Rigidbody:
   m_ObjectHideFlags: 0
