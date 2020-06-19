@@ -225,6 +225,7 @@ public class PlayerController : MonoBehaviour
             var FProt3 = _firePoint.rotation;
             var FProt4 = _firePoint.rotation;
             var FProt5 = _firePoint.rotation;
+            var FProt6 = _firePoint.rotation;
             FProt0.x += Random.Range(-0.1f, 0.1f);
             FProt0.y += Random.Range(-0.1f, 0.1f);
             FProt0.z += Random.Range(-0.1f, 0.1f);
@@ -249,8 +250,12 @@ public class PlayerController : MonoBehaviour
             FProt5.y += Random.Range(-0.1f, 0.1f);
             FProt5.z += Random.Range(-0.1f, 0.1f);
             Instantiate(_activeGun.bullet, _firePoint.position, FProt5);
+            FProt6.x += Random.Range(-0.1f, 0.1f);
+            FProt6.y += Random.Range(-0.1f, 0.1f);
+            FProt6.z += Random.Range(-0.1f, 0.1f);
+            Instantiate(_activeGun.bullet, _firePoint.position, FProt6);
 
-         }
+        }
          else if (_activeGun.currentAmmo > 0)
          {
             _recoil.Recoil();

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4462390531057049827}
   - component: {fileID: 4958245773203835923}
   - component: {fileID: 1925626392383835152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: default
   m_TagString: Solid
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6900508376682096392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: box_big_1
   m_TagString: Solid
   m_Icon: {fileID: 0}
