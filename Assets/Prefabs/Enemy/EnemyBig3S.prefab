@@ -213,8 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa38825122eeffc42999ba8df2164f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _chaseDistance: 30
-  _loseDistance: 40
+  _chaseDistance: 40
+  _loseDistance: 50
   _agent: {fileID: 3617859253914451540}
   _bullet: {fileID: 2392157041810624747, guid: 6638b4cc7d7dddf43a40568ed444bd72, type: 3}
   _firePoint: {fileID: 3617859252906100940}
